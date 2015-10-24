@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Everett Ross Project 1</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="guessingGame.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="row">
+		<img src="http://www.entrepreneurradio.org/wp-content/uploads/2014/07/question-marks-1940x900_35723.jpg" alt="I don't have my own logo, so here is a picture of question marks I found with a google search.">
+	</div>
+	<div class="row">
+		<h1>Guess The Number</h1>
+	</div>
+	<div class="row guess-box">
+		<div class="row">
+			<input type="text" name="guess" class="playerGuess"placeholder="Input Number 1-100">
+		</div>
+		<div class="row">
+			<button type="button" id="submit" class="submitButton">Submit Your Guess</button>
+		</div>
+		<div class="row guess-box">
+			<p class="responseToGuess"></p>
+		</div>
+	</div>
+	<div class="row two-button">
+		<button type="button" id="submit" class="playAgain">Play Again</button>
+		<button type="button" id="submit" class="hint">Give me a Hint</button>
+	</div>
+	<div class="row">
+		<h2><span class="guessesLeft">10</span> guesses remaining.</h2>
+	</div>
+	<div class="row log">
+		<h3 class="hidden">Below is a log of all of your previous guesses. Mouse over <span class="info">"here"</span> for more details!</h3>
+		<p class="help hidden">This is a log of all of your previous guesses. Your first guess is immediately below this paragraph, your most recent guess is at the bottom of the list. Warmer means that your most recent guess was closer to the correct number than the guess before it. Colder means your most recent guess was further or equidistant from the corrent number than the guess before it.</p>
+	</div>
+</body>
